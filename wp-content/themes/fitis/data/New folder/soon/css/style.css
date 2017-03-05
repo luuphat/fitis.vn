@@ -1,0 +1,101 @@
+@font-face {
+    font-family: "thin";
+    src: url("MyriadSetPro-Thin.ttf");
+}
+
+@font-face {
+    font-family: "ultralight";
+    src: url("MyriadSetPro-Ultralight.ttf");
+}
+
+@font-face {
+    font-family: "bold";
+    src: url("MyriadSetPro-Semibold.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    cursor: pointer;
+    outline: medium none;
+    text-decoration: none !important;
+}
+
+body{
+    background-color: black;
+}
+
+.container {
+    background-color: #000;
+    width: 100%;
+    min-height: 700px;
+    position: relative;
+}
+
+.fitis1 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 24%;
+}
+
+
+.fitis2 {
+    display: inherit;
+    padding-left: 17%;
+    padding-top: 95px;
+    width: 60%;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+}
+
+.fb_tw {
+    bottom: 0px;
+    height: 52px;
+    position: absolute;
+    right: 0px;
+    width: 280px;
+}
+
+.fb_tw a {
+    margin: 0 7px;
+}
+
+.followus {
+    bottom: 60px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    position: absolute;
+    right: 0;
+    width: 273px;
+    font-size: 19px;
+}
+
+.text1 {
+    color: white;
+    font-family: ultralight;
+    font-size: 50px;
+    left: 14%;
+    position: absolute;
+    top: 64%;
+}
+
+
+.text2 {
+    color: white;
+    font-family: ultralight;
+    font-size: 50px;
+    left: 22%;
+    position: absolute;
+    top: 72%;
+}

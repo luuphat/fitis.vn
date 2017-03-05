@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Fitis</title>
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+        <meta content="xuantuyen@live.com" name="author">
+        <meta content="An Lập" name="keywords">
+        <meta content="An Lập" name="description">
+        <meta content="INDEX,FOLLOW" name="robots">
+        <meta content="article" property="og:type">
+        <meta content="http://fitis.vn/" property="og:url">
+        <meta content="An Lập" property="og:title">
+        <meta content="An Lập" property="og:description">
+
+
+        <link type="image/x-icon" rel="shortcut icon" href="images/ico.png">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="js/script.js"></script>
+        
+        <script src="js/owl-carousel/owl.carousel.js"></script>
+        <link rel="stylesheet" href="js/owl-carousel/owl.carousel.css">
+        <link rel="stylesheet" href="js/owl-carousel/owl.theme.css">
+
+
+    </head>
+    <body>
+
+
+        <div class="header">
+            <div class="container">
+                <div class="ftxtkey">
+                    <form>
+                        <input type="text" style="" id="txtkey" name="txtkey" value="">
+                    </form>
+                </div>
+                <a class="header_search search" onclick="showtxtkey()">
+                    <img alt="search" src="images/search.png" />
+                    SEARCH
+                </a>
+
+                <a class="header_search search1 an" onclick="hidetxtkey()">
+                    <img alt="search" src="images/search.png" />
+                    SEARCH
+                </a>
+
+                <a class="header_phone" href="tel:+84909147247">
+                    <img alt="hand phone" src="images/handphone.png" />
+                    (+84)909 147 247
+                </a>
+
+                <div class="header_account">
+                    <a>
+                        MY ACCOUNT
+                    </a>
+                    <a>
+                        MY WISH LIST
+                    </a>
+                    <a>
+                        SHOPPING CART
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide">
+            <div id="owl-demo" class="owl-carousel owl-theme">
+                <div class="item"><img src="images/slide1.jpg" alt="The Last of us"></div>
+                <div class="item"><img src="images/slide1.jpg" alt="The Last of us"></div>
+                <div class="item"><img src="images/slide1.jpg" alt="The Last of us"></div>
+            </div>
+            <script>
+                $(document).ready(function() {                
+                  $("#owl-demo").owlCarousel({  
+                    autoPlay: 3000, //Set AutoPlay to 3 seconds              
+                    navigation : false, // Show next and prev buttons
+                    slideSpeed : 300,
+                    paginationSpeed : 400,
+                    singleItem:true                                
+                  });
+                });
+            </script>
+        </div>
+
+        <ul class="ul_3product">
+            <li>
+                <a class="d3product_name_c">
+                    <div class="d3product_name">
+                        OUR PRODUCT
+                    </div>
+                </a>
+                <img alt="product1" src="images/product1.jpg">
+            </li>
+            <li>
+                <img alt="product2" src="images/product2.jpg">
+                <a class="d3product_name_c">
+                    <div class="d3product_name">
+                        NEW ARRIVALS
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a class="d3product_name_c">
+                    <div class="d3product_name">
+                        OUR STORE
+                    </div>
+                </a>
+                <img alt="product3" src="images/product3.jpg">
+            </li>
+        </ul>
+
+
+        <div class="nav_container" id="nav_container">
+            <img class="an" alt="nav ar" src="images/nav_ar_red.png" />
+            <ul class="ul_nav container">
+                <li>
+                    <a>
+                        HOME
+                    </a>
+                </li>
+                <li class="nav_li_product" onmouseover="showsubnav_product()" onmouseout="hidesubnav_product()">
+                    <a onmouseover="change_color_red_nav_product(this)" onmouseout="change_color_white_nav_product(this)">
+                        PRODUCT
+                        <img class="nav_ar_product" alt="nav ar" src="images/nav_ar_white.png" />
+                    </a>
+
+                    <div class="subnav_product">
+                        <div class="subnav_product_left">
+                            <ul class="ul_nav_product">
+                                <li>
+                                    <a>
+                                        Fitis Bin
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        Lighting
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        Chair
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        Accessories
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="subnav_product_right">
+                            <img alt="product" src="images/navsub_product.jpg" />
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a onmouseover="change_color_red_nav_wheretobuy(this)" onmouseout="change_color_white_nav_wheretobuy(this)">
+                        WHERE TO BUY
+                        <img class="nav_ar_wheretobuy" alt="nav ar" src="images/nav_ar_white.png" />
+                    </a>
+                </li>
+                <li>
+                    <a>ONLINE SHOP</a>
+                </li>
+                <li>
+                    <a>ABOUT US</a>
+                </li>
+                <li>
+                    <a>DEALER</a>
+                </li>
+                <li>
+                    <a>CONTACT US</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="slide_one_product">
+
+            <div id="owl-slide-one-product" class="owl-carousel owl-theme">
+                <div class="item">
+                    <div class="slide_one_product_left">
+                        <div class="slide_one_product_name">
+                            Aenean viverra
+                        </div>
+                        <div class="slide_one_product_desc">
+                            We are offering you our tremendous choice of different kinds of funiture. It is t...
+                        </div>
+                        <div class="slide_one_product_price">
+                            10.000.000 VNĐ
+                        </div>
+                        <div class="slide_one_product_price_old">
+                            10.000.000 VNĐ
+                        </div>
+                    </div>
+                    <a class="slide_one_product_right">
+                        <img alt="product" src="images/product1.png" />
+                    </a>
+                </div>
+
+                <div class="item">
+                    <div class="slide_one_product_left">
+                        <div class="slide_one_product_name">
+                            Aenean viverra
+                        </div>
+                        <div class="slide_one_product_desc">
+                            We are offering you our tremendous choice of different kinds of funiture. It is t...
+                        </div>
+                        <div class="slide_one_product_price">
+                            9.000.000 VNĐ
+                        </div>
+                        <div class="slide_one_product_price_old">
+                            6.000.000 VNĐ
+                        </div>
+                    </div>
+                    <a class="slide_one_product_right">
+                        <img alt="product" src="images/product2.png" />
+                    </a>
+                </div>
+
+                <div class="item">
+                    <div class="slide_one_product_left">
+                        <div class="slide_one_product_name">
+                            Aenean viverra
+                        </div>
+                        <div class="slide_one_product_desc">
+                            We are offering you our tremendous choice of different kinds of funiture. It is t...
+                        </div>
+                        <div class="slide_one_product_price">
+                            25.000.000 VNĐ
+                        </div>
+                        <div class="slide_one_product_price_old">
+                            30.000.000 VNĐ
+                        </div>
+                    </div>
+                    <a class="slide_one_product_right">
+                        <img alt="product" src="images/product3.png" />
+                    </a>
+                </div>
+            </div>
+            <script>
+                $(document).ready(function() {                
+                  $("#owl-slide-one-product").owlCarousel({  
+                    autoPlay: 3000, //Set AutoPlay to 3 seconds              
+                    navigation : false, // Show next and prev buttons
+                    slideSpeed : 300,
+                    paginationSpeed : 400,
+                    singleItem:true                                
+                  });
+                });
+            </script>
+        </div>
+
+        <div class="container bg_white">
+            <div class="title3">
+                Featured Products
+            </div>
+            <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+            <ul class="any_product">
+                <li>
+                    <div class="any_product_img_rate">
+                        <a>
+                            <img alt="product" src="images/product1.png" />
+                        </a>
+                        <div class="cont">
+                            <div class="stars">
+                                <form action="">
+                                    <input type="radio" name="star" id="star-5" class="star star-5">
+                                    <label for="star-5" class="star star-5"></label>
+                                    <input type="radio" name="star" id="star-4" class="star star-4">
+                                    <label for="star-4" class="star star-4"></label>
+                                    <input type="radio" name="star" id="star-3" class="star star-3">
+                                    <label for="star-3" class="star star-3"></label>
+                                    <input type="radio" name="star" id="star-2" class="star star-2">
+                                    <label for="star-2" class="star star-2"></label>
+                                    <input type="radio" name="star" id="star-1" class="star star-1">
+                                    <label for="star-1" class="star star-1"></label>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price">
+                        10.000.000 VNĐ
+                    </div>
+                    <div class="price_old">
+                        12.000.000 VNĐ
+                    </div>
+                    <div class="clear"></div>
+                    <div class="any_product_name">
+                        Aenean viverra
+                    </div>
+                    <div class="any_product_disc">
+                        We are offering you our tremendous choice of different kinds of funiture. It is t...
+                    </div>
+                </li>
+                <li>
+                    <div class="any_product_img_rate">
+                        <a>
+                            <img alt="product" src="images/product2.png" />
+                        </a>
+                        <div class="cont">
+                            <div class="stars">
+                                <form action="">
+                                    <input type="radio" name="star" id="star-5-2" class="star star-5">
+                                    <label for="star-5-2" class="star star-5"></label>
+                                    <input type="radio" name="star" id="star-4-2" class="star star-4">
+                                    <label for="star-4-2" class="star star-4"></label>
+                                    <input type="radio" name="star" id="star-3-2" class="star star-3">
+                                    <label for="star-3-2" class="star star-3"></label>
+                                    <input type="radio" name="star" id="star-2-2" class="star star-2">
+                                    <label for="star-2-2" class="star star-2"></label>
+                                    <input type="radio" name="star" id="star-1-2" class="star star-1">
+                                    <label for="star-1-2" class="star star-1"></label>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price">
+                        7.000.000 VNĐ
+                    </div>
+                    <div class="price_old">
+                        9.000.000 VNĐ
+                    </div>
+                    <div class="clear"></div>
+                    <div class="any_product_name">
+                        Aliquam dolor tellus
+                    </div>
+                    <div class="any_product_disc">
+                        We are offering you our tremendous choice of different kinds of funiture. It is t...
+                    </div>
+                </li>
+                <li>
+                    <div class="any_product_img_rate">
+                        <a>
+                            <img alt="product" src="images/product3.png" />
+                        </a>
+                        <div class="cont">
+                            <div class="stars">
+                                <form action="">
+                                    <input type="radio" name="star" id="star-5-3" class="star star-5">
+                                    <label for="star-5-3" class="star star-5"></label>
+                                    <input type="radio" name="star" id="star-4-3" class="star star-4">
+                                    <label for="star-4-3" class="star star-4"></label>
+                                    <input type="radio" name="star" id="star-3-3" class="star star-3">
+                                    <label for="star-3-3" class="star star-3"></label>
+                                    <input type="radio" name="star" id="star-2-3" class="star star-2">
+                                    <label for="star-2-3" class="star star-2"></label>
+                                    <input type="radio" name="star" id="star-1-3" class="star star-1">
+                                    <label for="star-1-3" class="star star-1"></label>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price">
+                        10.000.000 VNĐ
+                    </div>
+
+                    <div class="clear"></div>
+                    <div class="any_product_name">
+                        Aliquam eget
+                    </div>
+                    <div class="any_product_disc">
+                        We are offering you our tremendous choice of different funiture. It is t...
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="aboutus">
+
+            <div class="title2">
+
+                    About Us
+                <img alt="ico muiten" class="muiten" src="images/ico.png" />
+
+            </div>
+
+            <div class="container">
+                <div class="content_aboutus">
+                    This is Photoshop's version  of Lorem Ipsum.
+                    Proin gravida nibh vel velit auctor aliquet.
+                    Aenean sollicitudin, lorem quis bibendum auctor,
+                    nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+                    Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
+                    Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.
+                    Sed non  mauris vitae erat consequat auctor eu in elit.
+                    Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+                    per inceptos himenaeos. Mauris in erat justo.
+                    Nullam ac urna eu felis dapibus condimentum sit amet a augue.
+                    Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc.
+                    Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam,
+                    ut aliquam massa nisl quis neque. Suspendisse in orci enim.
+                    <div class="chuky">
+                        <img alt="chữ ký" src="images/chuky.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="title2">
+            Contact Us
+        </div>
+        <div class="contactus">
+
+            <div class="container">
+
+
+                <div class="content_contactus">
+                    <div class="contact_title contact_container">
+
+                        How can we help you?
+                    </div>
+
+                    <div class="contact_container">
+                        <div class="contact_title1 ">
+                            Contact from for general information
+                        </div>
+
+                        <div class="contact_question chs0">
+                            <label class="question_label" for="question_option">
+                                I have a question about...
+                            </label>
+                            <div class="w65">
+                                <select onchange="change_question()" class="question_option" id="question_option" type="text" class="validate-select" title="Question" id="question_type" name="question_type">
+                                    <option value="chs0">-- Choose question --</option>
+                                    <option value="chs1">Order payment</option>
+                                    <option value="chs2">Order delivery</option>
+                                    <option value="chs3">Returning an order</option>
+                                    <option value="chs4">Product warranty</option>
+                                    <option value="chs5">A Product</option>
+                                    <option value="chs6">Website</option>
+                                    <option value="chs7">Other</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="contact_question chs1 chs2 chs3">
+                            <label class="question_label" for="name">
+                                Name <span class="red">*</span>
+                            </label>
+                            <div class="w65">
+                                <input type="text" id="name" class="question_text">
+                            </div>
+                        </div>
+
+                        <div class="contact_question chs1 chs2 chs3">
+                            <label class="question_label" for="name">
+                                Gender
+                            </label>
+                            <div class="w65">
+                                <div class="radio-button">
+                                    <label>
+                                        <input type="radio" class="custom-radio" value="Mr." id="gender_male" name="gender">
+                                        <span class="radio-button-circle"></span>
+                                        <span class="radio-button-label">Mr.</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact_question chs1 chs2 chs3">
+                            <label class="question_label" for="Country_option">
+                                Country <span class="red">*</span>
+                            </label>
+                            <div class="w65">
+                                <select class="question_option" id="Country_option" type="text" class="validate-select" title="Question" id="question_type" name="question_type">
+                                    <option value="">-- Choose country --</option>
+
+
+                                    <option value="AF">Afghanistan</option>
+                                    <option value="AX">Åland Islands</option>
+                                    <option value="AL">Albania</option>
+                                    <option value="DZ">Algeria</option>
+                                    <option value="AS">American Samoa</option>
+                                    <option value="AD">Andorra</option>
+                                    <option value="AO">Angola</option>
+                                    <option value="AI">Anguilla</option>
+                                    <option value="AQ">Antarctica</option>
+                                    <option value="AG">Antigua and Barbuda</option>
+                                    <option value="AR">Argentina</option>
+                                    <option value="AM">Armenia</option>
+                                    <option value="AW">Aruba</option>
+                                    <option value="AU">Australia</option>
+                                    <option value="AT">Austria</option>
+                                    <option value="AZ">Azerbaijan</option>
+                                    <option value="BS">Bahamas</option>
+                                    <option value="BH">Bahrain</option>
+                                    <option value="BD">Bangladesh</option>
+                                    <option value="BB">Barbados</option>
+                                    <option value="BY">Belarus</option>
+                                    <option value="BE">Belgium</option>
+                                    <option value="BZ">Belize</option>
+                                    <option value="BJ">Benin</option>
+                                    <option value="BM">Bermuda</option>
+                                    <option value="BT">Bhutan</option>
+                                    <option value="BO">Bolivia</option>
+                                    <option value="BA">Bosnia and Herzegovina</option>
+                                    <option value="BW">Botswana</option>
+                                    <option value="BV">Bouvet Island</option>
+                                    <option value="BR">Brazil</option>
+                                    <option value="IO">British Indian Ocean Territory</option>
+                                    <option value="VG">British Virgin Islands</option>
+                                    <option value="BN">Brunei</option>
+                                    <option value="BG">Bulgaria</option>
+                                    <option value="BF">Burkina Faso</option>
+                                    <option value="BI">Burundi</option>
+                                    <option value="KH">Cambodia</option>
+                                    <option value="CM">Cameroon</option>
+                                    <option value="CA">Canada</option>
+                                    <option value="CV">Cape Verde</option>
+                                    <option value="KY">Cayman Islands</option>
+                                    <option value="CF">Central African Republic</option>
+                                    <option value="TD">Chad</option>
+                                    <option value="CL">Chile</option>
+                                    <option value="CN">China</option>
+                                    <option value="CX">Christmas Island</option>
+                                    <option value="CC">Cocos (Keeling) Islands</option>
+                                    <option value="CO">Colombia</option>
+                                    <option value="KM">Comoros</option>
+                                    <option value="CG">Congo - Brazzaville</option>
+                                    <option value="CD">Congo - Kinshasa</option>
+                                    <option value="CK">Cook Islands</option>
+                                    <option value="CR">Costa Rica</option>
+                                    <option value="CI">Côte d’Ivoire</option>
+                                    <option value="HR">Croatia</option>
+                                    <option value="CU">Cuba</option>
+                                    <option value="CY">Cyprus</option>
+                                    <option value="CZ">Czech Republic</option>
+                                    <option value="DK">Denmark</option>
+                                    <option value="DJ">Djibouti</option>
+                                    <option value="DM">Dominica</option>
+                                    <option value="DO">Dominican Republic</option>
+                                    <option value="EC">Ecuador</option>
+                                    <option value="EG">Egypt</option>
+                                    <option value="SV">El Salvador</option>
+                                    <option value="GQ">Equatorial Guinea</option>
+                                    <option value="ER">Eritrea</option>
+                                    <option value="EE">Estonia</option>
+                                    <option value="ET">Ethiopia</option>
+                                    <option value="FK">Falkland Islands</option>
+                                    <option value="FO">Faroe Islands</option>
+                                    <option value="FJ">Fiji</option>
+                                    <option value="FI">Finland</option>
+                                    <option value="FR">France</option>
+                                    <option value="GF">French Guiana</option>
+                                    <option value="PF">French Polynesia</option>
+                                    <option value="TF">French Southern Territories</option>
+                                    <option value="GA">Gabon</option>
+                                    <option value="GM">Gambia</option>
+                                    <option value="GE">Georgia</option>
+                                    <option value="DE">Germany</option>
+                                    <option value="GH">Ghana</option>
+                                    <option value="GI">Gibraltar</option>
+                                    <option value="GR">Greece</option>
+                                    <option value="GL">Greenland</option>
+                                    <option value="GD">Grenada</option>
+                                    <option value="GP">Guadeloupe</option>
+                                    <option value="GU">Guam</option>
+                                    <option value="GT">Guatemala</option>
+                                    <option value="GG">Guernsey</option>
+                                    <option value="GN">Guinea</option>
+                                    <option value="GW">Guinea-Bissau</option>
+                                    <option value="GY">Guyana</option>
+                                    <option value="HT">Haiti</option>
+                                    <option value="HM">Heard Island and McDonald Islands</option>
+                                    <option value="HN">Honduras</option>
+                                    <option value="HK">Hong Kong SAR China</option>
+                                    <option value="HU">Hungary</option>
+                                    <option value="IS">Iceland</option>
+                                    <option value="IN">India</option>
+                                    <option value="ID">Indonesia</option>
+                                    <option value="IR">Iran</option>
+                                    <option value="IQ">Iraq</option>
+                                    <option value="IE">Ireland</option>
+                                    <option value="IM">Isle of Man</option>
+                                    <option value="IL">Israel</option>
+                                    <option value="IT">Italy</option>
+                                    <option value="JM">Jamaica</option>
+                                    <option value="JP">Japan</option>
+                                    <option value="JE">Jersey</option>
+                                    <option value="JO">Jordan</option>
+                                    <option value="KZ">Kazakhstan</option>
+                                    <option value="KE">Kenya</option>
+                                    <option value="KI">Kiribati</option>
+                                    <option value="KW">Kuwait</option>
+                                    <option value="KG">Kyrgyzstan</option>
+                                    <option value="LA">Laos</option>
+                                    <option value="LV">Latvia</option>
+                                    <option value="LB">Lebanon</option>
+                                    <option value="LS">Lesotho</option>
+                                    <option value="LR">Liberia</option>
+                                    <option value="LY">Libya</option>
+                                    <option value="LI">Liechtenstein</option>
+                                    <option value="LT">Lithuania</option>
+                                    <option value="LU">Luxembourg</option>
+                                    <option value="MO">Macau SAR China</option>
+                                    <option value="MK">Macedonia</option>
+                                    <option value="MG">Madagascar</option>
+                                    <option value="MW">Malawi</option>
+                                    <option value="MY">Malaysia</option>
+                                    <option value="MV">Maldives</option>
+                                    <option value="ML">Mali</option>
+                                    <option value="MT">Malta</option>
+                                    <option value="MH">Marshall Islands</option>
+                                    <option value="MQ">Martinique</option>
+                                    <option value="MR">Mauritania</option>
+                                    <option value="MU">Mauritius</option>
+                                    <option value="YT">Mayotte</option>
+                                    <option value="MX">Mexico</option>
+                                    <option value="FM">Micronesia</option>
+                                    <option value="MD">Moldova</option>
+                                    <option value="MC">Monaco</option>
+                                    <option value="MN">Mongolia</option>
+                                    <option value="ME">Montenegro</option>
+                                    <option value="MS">Montserrat</option>
+                                    <option value="MA">Morocco</option>
+                                    <option value="MZ">Mozambique</option>
+                                    <option value="MM">Myanmar (Burma)</option>
+                                    <option value="NA">Namibia</option>
+                                    <option value="NR">Nauru</option>
+                                    <option value="NP">Nepal</option>
+                                    <option value="NL">Netherlands</option>
+                                    <option value="AN">Netherlands Antilles</option>
+                                    <option value="NC">New Caledonia</option>
+                                    <option value="NZ">New Zealand</option>
+                                    <option value="NI">Nicaragua</option>
+                                    <option value="NE">Niger</option>
+                                    <option value="NG">Nigeria</option>
+                                    <option value="NU">Niue</option>
+                                    <option value="NF">Norfolk Island</option>
+                                    <option value="MP">Northern Mariana Islands</option>
+                                    <option value="KP">North Korea</option>
+                                    <option value="NO">Norway</option>
+                                    <option value="OM">Oman</option>
+                                    <option value="PK">Pakistan</option>
+                                    <option value="PW">Palau</option>
+                                    <option value="PS">Palestinian Territories</option>
+                                    <option value="PA">Panama</option>
+                                    <option value="PG">Papua New Guinea</option>
+                                    <option value="PY">Paraguay</option>
+                                    <option value="PE">Peru</option>
+                                    <option value="PH">Philippines</option>
+                                    <option value="PN">Pitcairn Islands</option>
+                                    <option value="PL">Poland</option>
+                                    <option value="PT">Portugal</option>
+                                    <option value="PR">Puerto Rico</option>
+                                    <option value="QA">Qatar</option>
+                                    <option value="RE">Réunion</option>
+                                    <option value="RO">Romania</option>
+                                    <option value="RU">Russia</option>
+                                    <option value="RW">Rwanda</option>
+                                    <option value="BL">Saint Barthélemy</option>
+                                    <option value="SH">Saint Helena</option>
+                                    <option value="KN">Saint Kitts and Nevis</option>
+                                    <option value="LC">Saint Lucia</option>
+                                    <option value="MF">Saint Martin</option>
+                                    <option value="PM">Saint Pierre and Miquelon</option>
+                                    <option value="VC">Saint Vincent and the Grenadines</option>
+                                    <option value="WS">Samoa</option>
+                                    <option value="SM">San Marino</option>
+                                    <option value="ST">São Tomé and Príncipe</option>
+                                    <option value="SA">Saudi Arabia</option>
+                                    <option value="SN">Senegal</option>
+                                    <option value="RS">Serbia</option>
+                                    <option value="SC">Seychelles</option>
+                                    <option value="SL">Sierra Leone</option>
+                                    <option value="SG">Singapore</option>
+                                    <option value="SK">Slovakia</option>
+                                    <option value="SI">Slovenia</option>
+                                    <option value="SB">Solomon Islands</option>
+                                    <option value="SO">Somalia</option>
+                                    <option value="ZA">South Africa</option>
+                                    <option value="GS">South Georgia and the South Sandwich Islands</option>
+                                    <option value="KR">South Korea</option>
+                                    <option value="ES">Spain</option>
+                                    <option value="LK">Sri Lanka</option>
+                                    <option value="SD">Sudan</option>
+                                    <option value="SR">Suriname</option>
+                                    <option value="SJ">Svalbard and Jan Mayen</option>
+                                    <option value="SZ">Swaziland</option>
+                                    <option value="SE">Sweden</option>
+                                    <option value="CH">Switzerland</option>
+                                    <option value="SY">Syria</option>
+                                    <option value="TW">Taiwan</option>
+                                    <option value="TJ">Tajikistan</option>
+                                    <option value="TZ">Tanzania</option>
+                                    <option value="TH">Thailand</option>
+                                    <option value="TL">Timor-Leste</option>
+                                    <option value="TG">Togo</option>
+                                    <option value="TK">Tokelau</option>
+                                    <option value="TO">Tonga</option>
+                                    <option value="TT">Trinidad and Tobago</option>
+                                    <option value="TN">Tunisia</option>
+                                    <option value="TR">Turkey</option>
+                                    <option value="TM">Turkmenistan</option>
+                                    <option value="TC">Turks and Caicos Islands</option>
+                                    <option value="TV">Tuvalu</option>
+                                    <option value="UG">Uganda</option>
+                                    <option value="UA">Ukraine</option>
+                                    <option value="AE">United Arab Emirates</option>
+                                    <option value="GB">United Kingdom</option>
+                                    <option value="US">United States</option>
+                                    <option value="UY">Uruguay</option>
+                                    <option value="UM">U.S. Minor Outlying Islands</option>
+                                    <option value="VI">U.S. Virgin Islands</option>
+                                    <option value="UZ">Uzbekistan</option>
+                                    <option value="VU">Vanuatu</option>
+                                    <option value="VA">Vatican City</option>
+                                    <option value="VE">Venezuela</option>
+                                    <option value="VN">Vietnam</option>
+                                    <option value="WF">Wallis and Futuna</option>
+                                    <option value="EH">Western Sahara</option>
+                                    <option value="YE">Yemen</option>
+                                    <option value="ZM">Zambia</option>
+                                    <option value="ZW">Zimbabwe</option>
+
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="contact_question chs1 chs2 chs3">
+                            <label class="question_label" for="email">
+                                Email <span class="red">*</span>
+                            </label>
+                            <div class="w65">
+                                <input type="text" id="email" class="question_text">
+                            </div>
+                        </div>
+
+                        <div class="contact_question chs1 chs2 chs3">
+                            <label class="question_label" for="phone">
+                                Telephone
+                            </label>
+                            <div class="w65">
+                                <input type="text" id="phone" class="question_text">
+                            </div>
+                        </div>
+
+                        <div class="contact_question chs1 chs2">
+                            <label class="question_label" for="orderid">
+                                Order ID <span class="red">*</span>
+                            </label>
+                            <div class="w65">
+                                <input type="text" id="orderid" class="question_text">
+                            </div>
+                        </div>
+
+                        <div class="contact_question chs1 chs2 chs3">
+                            <label class="question_label" for="orderid">
+                                Question <span class="red">*</span>
+                            </label>
+                            <div class="w65">
+                                <textarea class="question_area"></textarea>
+
+                            </div>
+                        </div>
+
+                        <div class="clear"></div>
+                        <div class="contact_question chs0">
+                            <div class="required_fields">
+                                (*) Required Fields
+                            </div>
+                        </div>
+
+                        <div class="clear"></div>
+                        <div class="contact_question chs0">
+                            <div class="required_fields">
+                                <input class="send" type="button" value="Send">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="container">
+                <div class="footer_container">
+                    <ul class="ul_footer">
+                        <li class="w200 center">
+                            <img class="logo_footer" alt="logo" src="images/logo.png">
+                        </li>
+                        <li class="line_red_footer"></li>
+                        <li class="w200">
+                            <p><b>Product</b></p>
+                            <p>
+                            Bin & Accessories
+                            </p>
+                            <p>
+                            Furniture
+                            </p>
+                            <p>
+                            Other
+                            </p>
+
+                        </li>
+                        <li class="w200">
+                            <p><b>Info & Contact</b></p>
+                            <p>
+                            About Us
+                            </p>
+                            <p>
+                            Contact
+                            </p>
+                        </li>
+                        <li class="w200">
+                            <p><b>Follow Us</b></p>
+                            <p>
+                            Our New Letter
+                            </p>
+                            <p class="social">
+                                <a href="http://facebook.com">
+                                    <img alt="facebook" src="images/fb.png" />
+                                </a>
+                                <a href="https://twitter.com/">
+                                    <img alt="twitter" src="images/tw.png" />
+                                </a>
+                                <a href="http://youtube.com">
+                                    <img alt="youtube" src="images/yt.png" />
+                                </a>
+                            </p>
+                        </li>
+                    </ul>
+                    <div class="clear"></div>
+                    <div class="mt20"></div>
+                    <div style="" class="address_footer">
+                        <div class="footer_address">
+                            <img src="images/push_pin_white.png" alt="address"> Lot 209, Amata IZ, Bien Hoa, Dong Nai
+                        </div>
+                        <div class="footer_email">
+                            <a href="mailto:anlap@anlap.com">
+                                <img src="images/mail1_white.png" alt="email"> sales@fitis.vn
+                            </a>
+                        </div>
+                        <div class="footer_phone">
+                            <a href="tel:+846183988776">
+                                <img src="images/contact_white.png" alt="phone"> +84(61)83988776
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
